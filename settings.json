@@ -1,27 +1,28 @@
 {
-    "typescript.tsdk": "./node_modules/typescript/lib",
+    "window.restoreFullscreen": true,
+    "window.zoomLevel": 0,
+    "git.confirmSync": false,
+    // Configure glob patterns for excluding files and folders.
     "files.exclude": {
-        // include the defaults from VS Code
         "**/.git": true,
-        "**/.DS_Store": true,
-        // exclude .js and .js.map files, when in a TypeScript project
-        "**/*.js": {
-            "when": "$(basename).ts"
-        },
-        "**/*.js.map": true,
-        // exclude .css files when .scss file exist
-        "**/*.css": {
-            "when": "$(basename).scss"
-        }
+        "**/compiled/*": true,
+        "**/node_modules/*": true,
+        "**/dist/*": true
     },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     "search.exclude": {
-        "**/testresults": true,
-        "**/dll": true,
-        "**/dist": true,
-        "**/output": true,
-        "**/src/compiled": true,
-        "**/coverage": true
+        "**/node_modules": true,
+        "**/bower_components": true
     },
-    // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
-    "editor.formatOnSave": false
+    "explorer.openEditors.visible": 0,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.mouseWheelZoom": true,
+    // Controls the font size in pixels.
+    // Columns at which to show vertical rulers
+    "editor.rulers": [140],
+    "window.showFullPath": true,
+    // Indent <head> and <body> sections.
+    "html.format.indentInnerHtml": true
 }
