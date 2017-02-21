@@ -1,0 +1,27 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "files.exclude": {
+        // include the defaults from VS Code
+        "**/.git": true,
+        "**/.DS_Store": true,
+        // exclude .js and .js.map files, when in a TypeScript project
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.js.map": true,
+        // exclude .css files when .scss file exist
+        "**/*.css": {
+            "when": "$(basename).scss"
+        }
+    },
+    "search.exclude": {
+        "**/testresults": true,
+        "**/dll": true,
+        "**/dist": true,
+        "**/output": true,
+        "**/src/compiled": true,
+        "**/coverage": true
+    },
+    // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+    "editor.formatOnSave": false
+}
