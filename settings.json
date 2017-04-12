@@ -24,6 +24,5 @@
         140
     ],
     "window.showFullPath": true,
-    "workbench.editor.showIcons": true,
-    "html.format.indentInnerHtml": true
+    "workbench.editor.showIcons": true
 }
